@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>chess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Supherhero">
+    <meta name="keywords" content="programming hero,learn programming">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  background-image:url(IMG-20241113-WA0009.jpg);
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.chessboard {
+  display: inline-block;
+  border: 5px solid #444;
+  margin-top: 10px;
+  border-bottom: 12px solid #444;
+  border-right: 12px solid #444;
+  box-shadow: 4px 4px 4px 10px #448;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.white {
+  background: rgb(36,25,0);
+background: radial-gradient(circle, rgba(36,25,0,1) 0%, rgba(77,41,27,1) 46%, rgba(155,97,41,1) 100%);
+  background-color:
+}
+
+.black {
+   background: rgb(182,158,104);
+background: radial-gradient(circle, rgba(182,158,104,0.671983315831139) 0%, rgba(181,124,101,0.6180898632322038) 46%, rgba(225,188,151,0.5261540696734474) 100%);
+}
+
+.tile span {
+  color: black;
+}
+
+
+
+</style>
+
+<body>
+<div id="app">
+     
+  <div class="container">
+    
+    
+    <div class="chessboard">
+      <div class="row">
+        <div class="tile black"><span>♜</span></div>
+        <div class="tile white"><span>♞</span></div>
+        <div class="tile black"><span>♝</span></div>
+        <div class="tile white"><span>♛</span></div>
+        <div class="tile black"><span>♚</span></div>
+        <div class="tile white"><span>♝</span></div>
+        <div class="tile black"><span>♞</span></div>
+        <div class="tile white"><span>♜</span></div>
+      </div>
+      <div class="row">
+        <div class="tile white"><span>♟</span></div>
+        <div class="tile black"><span>♟</span></div>
+        <div class="tile white"><span>♟</span></div>
+        <div class="tile black"><span>♟</span></div>
+        <div class="tile white"><span>♟</span></div>
+        <div class="tile black"><span>♟</span></div>
+        <div class="tile white"><span>♟</span></div>
+        <div class="tile black"><span>♟</span></div>
+      </div>
+      <div class="row">
+        <!-- Repeat empty tiles -->
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+      </div>
+         <div class="row">
+        <!-- Repeat empty tiles -->
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+      </div>
+         <div class="row">
+        <!-- Repeat empty tiles -->
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+      </div>
+        <div class="row">
+        <!-- Repeat empty tiles -->
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+      </div>
+       <div class="row">
+        <!-- Repeat empty tiles -->
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+        <div class="tile black"></div>
+        <div class="tile white"></div>
+      </div>
+      <!-- Repeat 3 rows like above -->
+      <div class="row">
+        <div class="tile white"><span>♙</span></div>
+        <div class="tile black"><span>♙</span></div>
+        <div class="tile white"><span>♙</span></div>
+        <div class="tile black"><span>♙</span></div>
+        <div class="tile white"><span>♙</span></div>
+        <div class="tile black"><span>♙</span></div>
+        <div class="tile white"><span>♙</span></div>
+        <div class="tile black"><span>♙</span></div>
+      </div>
+      <div class="row">
+        <div class="tile black"><span>♖</span></div>
+        <div class="tile white"><span>♘</span></div>
+        <div class="tile black"><span>♗</span></div>
+        <div class="tile white"><span>♕</span></div>
+        <div class="tile black"><span>♔</span></div>
+        <div class="tile white"><span>♗</span></div>
+        <div class="tile black"><span>♘</span></div>
+        <div class="tile white"><span>♖</span></div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div>
+   <marquee>Made By uqba khan</marquee>
+   </div>
+</body>
+</html>
+
+
+
+
+
+<!--main js-->
+<script src="js/main.js"></script>
+</body>
+</html>
